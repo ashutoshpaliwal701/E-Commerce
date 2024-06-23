@@ -1,9 +1,16 @@
 import mongoose from "mongoose";
 
 const productSchema = new mongoose.Schema({
-    image : [
+    productImg : [
         {
-            type : String, 
+            publicId : {
+                type : String,
+                default : null
+            }, 
+            secure_url : {
+                type : String,
+                default : null
+            }
         }
     ],
     name : {
@@ -40,6 +47,7 @@ const productSchema = new mongoose.Schema({
         type : Number,
         require : [true, "Price is Must"]
     },
+    
     
 })
 

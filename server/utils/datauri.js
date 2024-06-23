@@ -1,14 +1,13 @@
 import DataUriParser from 'datauri/parser.js';
 import * as path from 'path';
+import cloudinary from 'cloudinary';
 import asyncErroHandeler from './asyncErrorHandeler.js';
 
-const getDataUri = (file) =>{
-    try{
 
-  console.log(typeof(file.originalname));
+export const getDataUri = (file) =>{
+    try{
 const parser = new DataUriParser();
 const extentionName = path.extname(file.originalname).toString();
-console.log(typeof(extentionName));
 return parser.format(extentionName, file.buffer);
     }catch(err){
         console.log(err);
@@ -16,4 +15,4 @@ return parser.format(extentionName, file.buffer);
     
 }
 
-export default getDataUri;
+

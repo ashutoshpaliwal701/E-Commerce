@@ -3,8 +3,6 @@ import { Seller } from "../../../models/seller/seller.js";
 import asyncErroHandeler from "../../../utils/asyncErrorHandeler.js";
 import ErroHandeler from "../../../utils/ErrorHandeler.js";
 import { setToken } from "../../../utils/cookie.js";
-import getDataUri from '../../../utils/datauri.js';
-import cloudinary from 'cloudinary';
 
 export const signUpControl = asyncErroHandeler(async (req, res) => {
     const {
@@ -32,7 +30,6 @@ export const signUpControl = asyncErroHandeler(async (req, res) => {
             }
 
             
-            console.log(fileUpload);
             const newSeller = new Seller({
                 name: name,
                 email: email,
@@ -69,26 +66,3 @@ export const signUpControl = asyncErroHandeler(async (req, res) => {
 
 
 // Change Profile Pic Route Which is PUT
-
-export const userProfile = (req,res) =>{
-
-
-    const file = req.file;
-    
-    const fileUpload = asyncErroHandeler(async(file) =>{
-        if(file){
-            const pic = getDataUri(file);
-            const myCloud = await cloudinary.v2.uploader.upload(pic.content, {
-                folder: "e-comm",
-                use_filename : true
-            })
-            return myCloud;
-        }
-        else{
-            return myCloud = {
-                publicId : null,
-                secure_url : null
-            }
-        }
-    })
-}
