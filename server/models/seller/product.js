@@ -33,7 +33,7 @@ const productSchema = new mongoose.Schema({
             ref : "Customer"
         }
     ],
-    type : {
+    typePro : {
         type : String, 
     },
     price : {

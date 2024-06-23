@@ -1,6 +1,10 @@
 import mongoose, { mongo } from "mongoose";
 
 const sellerSchema = new mongoose.Schema({
+    image : {
+        publicId : String,
+        url :String
+    },
     name : {
         type : String, 
         require : [true, "Enter Your Name"]
@@ -33,7 +37,11 @@ const sellerSchema = new mongoose.Schema({
     },
     location :{
         type : String, 
-        require : True
+        require : true
+    },
+    phoneNo : {
+        type : Number,
+        require : [true, "Enter You Phone NO."]
     }
 })
 
