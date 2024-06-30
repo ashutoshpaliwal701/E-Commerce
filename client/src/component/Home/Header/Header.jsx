@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -17,21 +18,26 @@ const Header = () => {
         <div className='auth_container'>
           <div className='account'>
             <div className="icon_account">
-
               <i class="fa-regular fa-user"></i>
             </div>
           </div>
           <div className='account'>
-            <div className="icon_account">
-
-              <i class="fa-regular fa-heart"></i>
-            </div>
+            <Link to={"/wishlist"}>
+              <div className="icon_account">
+                <p>
+                <i class="fa-regular fa-heart"></i>
+                </p>
+              </div>
+            </Link>
           </div>
           <div className='account'>
-            <div className="icon_account">
-
-              <i class="fa-solid fa-cart-shopping"></i>
-            </div>
+            <Link to={"/cart"}>
+              <div className="icon_account">
+                <p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

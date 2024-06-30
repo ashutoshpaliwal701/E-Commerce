@@ -2,13 +2,13 @@ import React from 'react'
 import "./FeatureCatagory.css"
 
 
-const FeatureCatagory = () => {
+const FeatureCatagory = (props) => {
     return (
         <>
             <div className='full_feature'>
 
                 <div className='featured_catagory'>
-                    <div className='featured_catagory_label'>Featured Categories</div>
+                    <div className='featured_catagory_label'>Feature Catagrory</div>
                     <div className='cat_line'></div>
                 </div>
 
