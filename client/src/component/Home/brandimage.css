@@ -1,0 +1,45 @@
+.poster{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(222, 222, 222);
+    padding: 0 80px;
+}
+
+.brand_lable{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.shoe_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0;
+}
+
+.shop_now{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+img{
+    width: 400px;
+}
+
