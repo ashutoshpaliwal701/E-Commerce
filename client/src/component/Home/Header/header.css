@@ -1,5 +1,5 @@
 .Navigation_bar{
-    width: 100%;
+    max-width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,6 @@
 
 
 .account{
-
     width: 40px;
     height: 40px;
     border-radius: 10px;
@@ -74,4 +73,12 @@
 .auth_container{
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 460px) {
+    .Navigation_bar{
+        width: 87%;
+        padding: 0 10px;
+    }
+
 }
