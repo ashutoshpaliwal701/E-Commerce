@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: start;
     padding: 80px;
-    font-size: x-large;
+    font-size: 2rem;
 }
 
 .line{
@@ -25,4 +25,25 @@
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
     margin: 10px;
+}
+
+@media screen and (max-width : 430px){
+    .feature_item {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+    .product_card_img {
+        object-fit: contain;
+    }
+
+    .line{
+        width: 100px;
+        height: 5px;
+    }
+
+    .featured_prouduct_item{
+        grid-template-columns: auto;
+    }
 }

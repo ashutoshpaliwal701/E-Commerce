@@ -12,7 +12,7 @@ const BrandImage = () => {
             </div>
         </div>
         <div className='shoe_img'> 
-            <img src="https://res.cloudinary.com/djfi9rtlx/image/upload/v1719639782/sneekers_dqywil.png" alt="" />
+            <img className='shoe_img1' src="https://res.cloudinary.com/djfi9rtlx/image/upload/v1719639782/sneekers_dqywil.png" alt="" />
         </div>
 
 

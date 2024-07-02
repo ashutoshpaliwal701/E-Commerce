@@ -76,3 +76,25 @@
     border-radius: 10px;
     background-color: rgb(180, 179, 179);
 }
+
+@media screen and (max-width : 460px){
+    .featured_catagory_label{
+        font-size: 1.5rem;
+    }
+
+    .featured_catagory {
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+
+    .cat_line {
+        width: 100px;
+        height: 5px;
+    }
+
+    .card {
+        grid-template-areas: "auto";
+        grid-gap: 20px;
+        padding: 0 20px;
+    }
+}

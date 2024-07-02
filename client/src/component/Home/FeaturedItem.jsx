@@ -6,9 +6,9 @@ const FeaturedItem = (props) => {
   return (
     <div className='feature_item'>
       <div className='lable_div'>
-        <h1>
+        <p>
           {props.title}
-        </h1>
+        </p>
         <div className='line'>
         </div>
       </div>

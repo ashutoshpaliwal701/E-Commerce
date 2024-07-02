@@ -39,7 +39,21 @@
 img{
     width: 230px;
     height: 230px;
-    
-
 }
 
+
+@media screen and (max-width : 460px){
+    .poster{
+        padding: 0 20px;
+        max-width: 80%;
+    }
+
+    .shoe_img{
+        display: none;
+    }
+
+    .shop_now{
+        width: 60%;
+        font-size: 1rem;
+    }
+}

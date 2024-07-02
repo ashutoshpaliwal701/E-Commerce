@@ -36,5 +36,9 @@
         
         cursor: pointer;
     }
+
+    .shoe_img{
+        display: none;
+    }
 }
 
