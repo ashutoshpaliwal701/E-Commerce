@@ -37,3 +37,9 @@
 .product_like, .product_cart{
     cursor: pointer;
 }
+
+@media screen and (max-width: 460px){
+    .product_card{
+        width: 100%;
+    }
+}

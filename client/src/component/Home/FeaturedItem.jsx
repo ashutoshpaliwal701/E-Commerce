@@ -13,28 +13,28 @@ const FeaturedItem = (props) => {
         </div>
       </div>
       <div className='featured_prouduct_item'>
-        <div>
+        <div className='product_card_div'>
           <ProductCard/>
         </div>
-        <div>
+        <div className='product_card_div'>
           <ProductCard/>
         </div>
-        <div>
+        <div className='product_card_div'>
           <ProductCard/>
         </div>
-        <div>
+        <div className='product_card_div'>
           <ProductCard/>
         </div>
-        <div>
+        <div className='product_card_div'>
           <ProductCard/>
         </div>
-        <div>
+        <div className='product_card_div'>
           <ProductCard/>
         </div>
-        <div>
+        <div className='product_card_div'>
           <ProductCard/>
         </div>
-        <div>
+        <div className='product_card_div'>
           <ProductCard/>
         </div>
       </div>

@@ -46,4 +46,10 @@
     .featured_prouduct_item{
         grid-template-columns: auto;
     }
+
+    .product_card_div{
+        display: flex;
+        justify-content: center;
+    }
+    
 }
