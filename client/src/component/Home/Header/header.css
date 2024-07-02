@@ -15,6 +15,7 @@
 
 .search_input{
     display: flex;
+    margin-left: 10px;
     width: 100%;
 }
 .search_input >input{
