@@ -6,8 +6,8 @@ const Header = () => {
   return (
     <>
       <div className='Navigation_bar'>
-        <div style={{ cursor: 'pointer' }}>
-          <h1>SF</h1>
+        <div className='logo_img' style={{ cursor: 'pointer', objectFit : "contain"}}>
+          <img className='logo_img'  src="https://res.cloudinary.com/djfi9rtlx/image/upload/v1688367398/Style%20Fussion/Assets/Logo/Style_Fussion_3_hg54oi.png" alt="" />
         </div>
         <div className='search'>
           <form className='search_input'>

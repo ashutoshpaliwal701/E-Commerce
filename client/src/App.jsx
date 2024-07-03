@@ -12,6 +12,7 @@ import Login from './component/auth/Login';
 import Signup from './component/auth/Signup';
 import Cart from './component/Cart';
 import WishList from './component/WishList';
+import Product from './component/product/Product';
 
 
 
@@ -30,6 +31,8 @@ function App() {
         <Route exact path='/signup' element={<Signup/>}/>
         <Route exact path='/cart' element={<Cart/>}/>
         <Route exact path='/wishlist' element={<WishList/>}/>
+        <Route exact path='/product' element={<Product/>}/>
+
       </Routes>
         <h1>Footer</h1>
       {/* <Footer/> */}
