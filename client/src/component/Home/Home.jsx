@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(()=>{
     setTimeout(() => {
       setData("Hello world")
-      setLoading(false)
+      setLoading(true)
     }, 2000);
   }, [])
 

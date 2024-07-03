@@ -26,3 +26,11 @@
         opacity: 1;
     }
 }
+
+
+@media screen and (max-width:460px){
+    .loading_cont{
+        align-items: start;
+        padding-top: 200px;
+    }
+}
